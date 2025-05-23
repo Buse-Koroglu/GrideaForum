@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Quantico", sans-serif;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 15rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.ul-links {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.yazı a{
+    opacity: 0.7;
+    display: inline-block;
+    padding: 15px 12px; 
+    background-color: aquamarine;
+    border-radius:50%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.kitchen_box {
+    padding: 40px 15rem;
+}
+
+.kitchen {
+    display: flex;
+    gap: 50px;
+}
+
+
+.title h1 {
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.kitchen .text p {
+    opacity: 0.7;
+    width: 600px;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.kitchen .button a {
+    color: cadetblue;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid cadetblue;
+    font-weight: bold;
+}
+
+.kitchen .button a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+.kitchen img{
+    width: 300px;
+    height: 300px;
+    box-shadow: -12px 12px 0 1px aquamarine;
+}
+/*----------------------------------------------------------------------------- */
+
+.sinema img{
+    width: 300px;
+    height: 300px;
+    box-shadow: -12px 12px 0 1px aquamarine;
+    margin-top: 10px;
+    
+}
+
+.sinema .button a {
+    color: cadetblue;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid cadetblue;
+    font-weight: bold;
+}
+
+.sinema .button a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+.sinema .text p {
+    opacity: 0.7;
+    width: 600px;
+    font-size: 19px;
+    margin-bottom: 30px;
+    
+}
+
+.sinema .title h1 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.sinema_box {
+    padding: 40px 15rem;
+}
+
+.sinema {
+    display: flex;
+    gap: 50px;
+}
+
+/*----------------------------------------------------------------------------------  */
+
+.sanat_box {
+    padding: 40px 15rem;
+}
+
+.sanat {
+    display: flex;
+    gap: 50px;
+}
+
+
+.sanat .title h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.sanat .text p {
+    opacity: 0.7;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.sanat .button a {
+    color: cadetblue;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid cadetblue;
+    font-weight: bold;
+}
+
+.sanat .button a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+
+.sanat img{
+    width: 300px;
+    height: 300px;
+    box-shadow: -12px 12px 0 1px aquamarine;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+.asdadas img{
+    height: 300px;
+    box-shadow: -12px 12px 0 1px aquamarine;
+    margin-top: 10px;
+    
+}
+
+.asdadas .button a {
+    color: cadetblue;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid cadetblue;
+    font-weight: bold;
+}
+
+.asdadas .button a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+.asdadas .text p {
+    opacity: 0.7;
+    font-size: 19px;
+    margin-bottom: 30px;
+    
+}
+
+.asdadas .title h1 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.asdadas_box {
+    padding: 40px 15rem;
+}
+
+.asdadas {
+    display: flex;
+    gap: 50px;
+}
+/*------------------------------------------------------------------------------------------*/
+
+.ayse_box {
+    padding: 40px 15rem;
+}
+
+.ayse {
+    display: flex;
+    gap: 50px;
+}
+
+
+.ayse .title h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.ayse .text p {
+    opacity: 0.7;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.ayse .button a {
+    color: cadetblue;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid cadetblue;
+    font-weight: bold;
+}
+
+.ayse .button a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+
+.ayse img{
+    width: 300px;
+    height: 300px;
+    box-shadow: -12px 12px 0 1px aquamarine;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+.mehmet_box {
+    padding: 40px 15rem;
+}
+
+.mehmet {
+    display: flex;
+    gap: 50px;
+}
+
+
+.mehmet .title h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.mehmet .text p {
+    opacity: 0.7;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.mehmet .button a {
+    color: cadetblue;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid cadetblue;
+    font-weight: bold;
+}
+
+.mehmet .button a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+
+.mehmet img{
+    width: 300px;
+    height: 300px;
+    box-shadow: -12px 12px 0 1px aquamarine;
+}
+/*---------------------------------------------------------------------------------*/
+
+.footer-container {
+  padding: 0 15rem 40px;
+} 
+
+.footer-box {
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.footer-left {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer-right {
+    opacity: 0.8;
+  font-size: 1rem;
+}

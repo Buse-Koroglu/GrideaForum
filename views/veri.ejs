@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/veri.css" />
+</head>
+<body>
+  <nav>
+    <div class="title"><a href="/">Gridea Forum</a></div>
+    <div class="links">
+      <ul class="ul-links">
+        <li><a class="link" href="/login">Giriş Yap</a></li>
+      </ul>
+      <div class="yazı">
+        <a href="/print">Yaz</a>
+      </div>  
+    </div>    
+  </nav>
+
+  <div class="content">
+  <div class="img">
+     <img src="/medya/<%= post.category.toLowerCase() %>.jpg" alt="<%= post.category %>" />
+</div>
+    <div class="name">
+      <p><strong>Yazar:</strong> <%= post.username %></p>
+    </div>
+    <div class="date">
+      <p><strong>Tarih:</strong> <%= new Date(post.created_at).toLocaleString('tr-TR') %></p>
+    </div>
+    <div class="title">
+      <h1><%= post.title %></h1>
+    </div>
+    <div class="text">
+      <p><%= post.content %></p>
+    </div>
+    <a href="/edit/<%= post.id %>">Düzenle</a>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer-box">
+      <div class="footer-left">Gridea</div>
+      <div class="footer-right">AYBÜ BİLTEK Kuruluşu</div>
+    </div>
+  </div>
+</body>
+</html>

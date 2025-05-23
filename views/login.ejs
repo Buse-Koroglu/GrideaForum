@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="/login.css" />
+</head>
+<body>
+  <div class="main">
+    <h1>Giriş Yap</h1>
+    <div class="login-container">
+      <form class="form" action="/login" method="POST">
+        <div class="groups">
+          <input type="text" id="username" name="username" placeholder="Kullanıcı Adı" required />
+        </div>
+        <div class="groups">
+          <input type="password" id="password" name="password" placeholder="Şifre" required />
+        </div>
+        <button type="submit" class="button">Giriş Yap</button>
+        <p class="signup">
+          Hesabınız yok mu? <a href="/register">Kayıt Ol</a>
+        </p>
+        <p class="home">Anasayfa'ya dönmek için <a href="/">tıklayın</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

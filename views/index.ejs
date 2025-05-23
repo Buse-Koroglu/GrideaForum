@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Anasayfa</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <nav>
+      <div class="title"><a href="/">Gridea Forum</a></div>
+      <div class="links">
+        <ul class="ul-links">
+          <li><a class="link" href="/login">Giriş Yap</a></li>
+        </ul>
+        <div class="yazı">
+          <a href="/print">Yaz</a>
+        </div>
+      </div>
+    </nav>
+
+    <% if (posts.length === 0) { %>
+      <p>Henüz gönderi yok.</p>
+  <% } else { %>
+    <% posts.forEach(post => { %>
+      <div style="border: 2px solid #ccc; padding: 10px; margin: 50px;">
+        <h2><%= post.title %></h2>
+    <% if (post.category === 'Art') { %>
+      <img src="/medya/art.jpg" alt="Art" width="200" />
+    <% } else if (post.category === 'Science') { %>
+      <img src="/medya/science.jpg" alt="Science" width="200" />
+    <% } else if (post.category === 'Cinema') { %>
+      <img src="/medya/cinema.jpg" alt="Cinema" width="200" />
+    <% } else if (post.category === 'Food') { %>
+      <img src="/medya/food.jpg" alt="Food" width="200" />
+    <% } else if(post.category === 'Design'){ %>
+      <img src="/medya/design.jpg" alt="Design" width="200" />
+    <% } else {  %>
+      <img src="/medya/technology.jpg" alt="Technology" width="200" />
+    <% }%>
+
+    <p><%= post.content.substring(0, 100) %>...</p>
+        <p><strong>Kategori:</strong> <%= post.category %></p>
+        <a href="/posts/<%= post.id %>">Devamını Oku</a>
+      </div>
+    <% }); %>
+  <% } %>
+    <div class="footer-container">
+      <div class="footer-box">
+        <div class="footer-left">Gridea</div>
+        <div class="footer-right">AYBÜ BİLTEK Kuruluşu</div>
+      </div>
+    </div>
+  </body>
+</html>

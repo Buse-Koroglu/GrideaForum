@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post</title>
+  <link rel="stylesheet" href="/print.css" />
+</head>
+<body>
+  <nav>
+    <div class="title"><a href="/">Gridea Forum</a></div>
+    <div class="links">
+      <ul class="ul-links">
+        <li><a class="link" href="/login">Giriş Yap</a></li>
+      </ul>
+      <div class="yazı">
+        <a href="/print">Yaz</a>
+      </div>  
+    </div>    
+  </nav>
+
+  <div class="main">
+    <form method="POST" action="/create">
+      <input class="baslik" type="text" name="title" placeholder="Başlık" value="<%= post.title %>" required/>
+      
+      <div id="editor-container" style="height: 200px;">
+        <div class="writing" contenteditable="true"><%- post.content %></div>
+        <textarea name="content" style="display:none;" id="hiddenContent"></textarea>
+      </div>
+
+      <div class="category_box">
+        <div class="category">
+          <h1>Category</h1><br>
+          <label><input type="radio" name="category" value="Art" <%= post.category === 'Art' ? 'checked' : '' %> > Art</label><br>
+          <label><input type="radio" name="category" value="Science" <%= post.category === 'Science' ? 'checked' : '' %> > Science</label><br>
+          <label><input type="radio" name="category" value="Technology" <%= post.category === 'Technology' ? 'checked' : '' %> > Technology</label><br>
+          <label><input type="radio" name="category" value="Cinema" <%= post.category === 'Cinema' ? 'checked' : '' %> > Cinema</label><br>
+          <label><input type="radio" name="category" value="Design" <%= post.category === 'Design' ? 'checked' : '' %> > Design</label><br>
+          <label><input type="radio" name="category" value="Food" <%= post.category === 'Food' ? 'checked' : '' %> > Food</label>
+        </div>
+        <button type="submit">Güncelle</button>
+      </div>
+    </form>    
+  </div>  
+
+  <div class="text_box">
+    <select>
+      <option>Normal</option>
+    </select>
+    <button type="button" onclick="document.execCommand('bold',false,'')"><b>B</b></button>
+    <button type="button" onclick="document.execCommand('italic',false,'')"><i>I</i></button>
+    <button type="button" onclick="document.execCommand('underline',false,'')"><u>U</u></button>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer-box">
+      <div class="footer-left">Gridea</div>
+      <div class="footer-right">AYBÜ BİLTEK Kuruluşu</div>
+    </div>
+  </div>    
+
+  <script>
+    const form = document.querySelector('form');
+    const contentDiv = document.querySelector('.writing');
+    const hiddenTextarea = document.getElementById('hiddenContent');
+
+    form.addEventListener('submit', () => {
+      hiddenTextarea.value = contentDiv.innerHTML;
+    });
+  </script>
+</body>
+</html>
